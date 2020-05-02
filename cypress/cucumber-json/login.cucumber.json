@@ -1,0 +1,85 @@
+[
+  {
+    "description": "  I want to log into Conduit",
+    "keyword": "Feature",
+    "name": "Login",
+    "line": 1,
+    "id": "login",
+    "tags": [],
+    "uri": "login.feature",
+    "elements": [
+      {
+        "id": "login;conduit-login",
+        "keyword": "Scenario",
+        "line": 6,
+        "name": "Conduit Login",
+        "tags": [
+          {
+            "name": "@smoke",
+            "line": 5
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "I open Conduit login page",
+            "result": {
+              "status": "passed",
+              "duration": 4306000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "username",
+                      "password"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "mmeraj@mailinator.com",
+                      "admin123"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "When ",
+            "line": 8,
+            "name": "I type in",
+            "result": {
+              "status": "passed",
+              "duration": 743000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "I click on Sign in button",
+            "result": {
+              "status": "passed",
+              "duration": 132000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "\"Your Feed\" should be shown",
+            "result": {
+              "status": "passed",
+              "duration": 1531000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
