@@ -23,6 +23,7 @@
     "cypress-file-upload": "^4.0.4",
     "cypress-multi-reporters": "^1.2.3",
     "mocha": "^6.2.2",
+    "mocha-junit-reporter": "^1.23.3",
     "mochawesome": "^4.1.0",
     "mochawesome-merge": "^2.0.1",
     "mochawesome-report-generator": "^4.0.1"
@@ -34,6 +35,11 @@
       "outputFolder": "cypress/cucumber-json",
       "filePrefix": "",
       "fileSuffix": ".cucumber"
+    },
+    "mocha": {
+      "reporterOptions": {
+        "mochaFile": "cypress/mocha-report.xml"
+      }
     }
   }
 }
