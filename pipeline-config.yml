@@ -1,7 +1,10 @@
 pipeline {
     agent any
 
-    tools {nodejs "latest nodejs"}
+    tools {
+        nodejs 'latest nodejs'
+        xvfb 'xvfb latest'
+        }
 
     environment {
         CHROME_BIN = '/bin/google-chrome'
