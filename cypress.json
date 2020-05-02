@@ -11,7 +11,11 @@
             "json": true
         },
         "mochaJunitReporterReporterOptions": {
-            "mochaFile": "cypress/reports/junit-custom.xml"
+            "mochaFile": "cypress/reports/junit-custom.xml",
+            "overwrite": false,
+            "includePending": true,
+            "testsuitesTitle": true,
+            "jenkinsMode": true
         }
     },
     "testFiles": "**/*.feature"
